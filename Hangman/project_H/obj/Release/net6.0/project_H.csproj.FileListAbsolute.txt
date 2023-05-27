@@ -1,0 +1,16 @@
+C:\Users\xnqpp\Desktop\Release\net6.0\project_H.exe
+C:\Users\xnqpp\Desktop\Release\net6.0\project_H.deps.json
+C:\Users\xnqpp\Desktop\Release\net6.0\project_H.runtimeconfig.json
+C:\Users\xnqpp\Desktop\Release\net6.0\project_H.dll
+C:\Users\xnqpp\Desktop\Release\net6.0\project_H.pdb
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.csproj.AssemblyReference.cache
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.AssemblyInfoInputs.cache
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.AssemblyInfo.cs
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.csproj.CoreCompileInputs.cache
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.csproj.CopyComplete
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.dll
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\refint\project_H.dll
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.pdb
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\project_H.genruntimeconfig.cache
+C:\Users\xnqpp\Documents\GitHub\CSharp_report\Hangman\project_H\obj\Release\net6.0\ref\project_H.dll
