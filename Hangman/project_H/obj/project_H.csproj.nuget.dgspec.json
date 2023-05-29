@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\CSharp_report\\Hangman\\project_H\\project_H.csproj": {}
+    "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\Console_HangMan\\Hangman\\project_H\\project_H.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\CSharp_report\\Hangman\\project_H\\project_H.csproj": {
+    "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\Console_HangMan\\Hangman\\project_H\\project_H.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\CSharp_report\\Hangman\\project_H\\project_H.csproj",
+        "projectUniqueName": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\Console_HangMan\\Hangman\\project_H\\project_H.csproj",
         "projectName": "project_H",
-        "projectPath": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\CSharp_report\\Hangman\\project_H\\project_H.csproj",
+        "projectPath": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\Console_HangMan\\Hangman\\project_H\\project_H.csproj",
         "packagesPath": "C:\\Users\\xnqpp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\CSharp_report\\Hangman\\project_H\\obj\\",
+        "outputPath": "C:\\Users\\xnqpp\\OneDrive\\문서\\GitHub\\Console_HangMan\\Hangman\\project_H\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xnqpp\\AppData\\Roaming\\NuGet\\NuGet.Config",
