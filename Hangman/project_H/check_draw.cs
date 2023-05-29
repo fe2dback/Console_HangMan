@@ -40,13 +40,15 @@ namespace project_H
 
         public void arr()
         {
-            if(multi == false)
+            
+
+            if (multi == false)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"SCORE : {score.result}");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            
+
             //카테고리
             Console.SetCursorPosition(0, 3);
             Console.WriteLine($"[{word_category}]");
@@ -156,7 +158,6 @@ namespace project_H
         }
 
 
-
         public void check()
         {
 
@@ -164,7 +165,6 @@ namespace project_H
             {
                 string value = key.key_Value();
                 Console.SetCursorPosition(0, 4);
-                
                 //입력값과 단어 스펠링 비교
                 if (char_L.Contains(char.Parse(value)))
                 {
@@ -207,7 +207,7 @@ namespace project_H
 
         public void HangMan(int chance)
         {
-            Console.WriteLine(diff);
+            #region console
             //교수대-밧줄-머리-팔-손-몸통-다리-발
             //교수대그리기
             Console.SetCursorPosition(40, 1);
@@ -221,7 +221,7 @@ namespace project_H
                 Console.SetCursorPosition(39, i);
                 Console.Write("│");
             }
-
+            #endregion
             diff -= chance;
 
             switch (diff)
@@ -312,7 +312,7 @@ namespace project_H
                     }
                     Console.SetCursorPosition(1, 6);
                     Console.WriteLine(word);
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
                     score.dead(); //킬 스코어, 스코어 기록
                     GameManager.Die();//죽음처리
                     break;

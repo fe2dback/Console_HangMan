@@ -1,4 +1,5 @@
 ﻿using Figgle;
+using System;
 using static System.Net.Mime.MediaTypeNames;
 
 
@@ -14,21 +15,25 @@ namespace project_H
             //시작시 난이도를 설정합니다
             Console.CursorVisible = false;
             selete_mode();
+
         }
 
+        
         static void OnGame(int diff)
         {
-            check_draw isGame = new check_draw();
-            isGame.arr();//단어를 생성합니다
-            isGame.diff = diff;//입력받은 난이도를 설정합니다
-            isGame.diff_next = diff;//재시작할때 난이도를 저장합니다
+            check_draw start_Game = new check_draw();
+            start_Game.arr();//단어를 생성합니다
+            start_Game.diff = diff;//입력받은 난이도를 설정합니다
+            start_Game.diff_next = diff;//재시작할때 난이도를 저장합니다
             while (true)
             {
-                isGame.check(); //플레이어의 입력을받고 이를 체크합니다
+                start_Game.check(); //플레이어의 입력을받고 이를 체크합니다
             }
         }
         public static void selete_mode()
         {
+
+            #region console
             string title = FiggleFonts.Standard.Render("H A N G - M A N");
             Console.Write(title);
             Thread.Sleep(500);
@@ -37,9 +42,10 @@ namespace project_H
             Console.WriteLine("[1]Classic\n");
             Thread.Sleep(500);
             Console.WriteLine("[2]Multiplay");
-            ConsoleKeyInfo diff = Console.ReadKey();
+            ConsoleKeyInfo difficulty = Console.ReadKey();
             Console.Clear();
-            switch (diff.Key)
+            #endregion
+            switch (difficulty.Key)
             {
                 case ConsoleKey.D1:
                     check_draw.Setuser(false);
@@ -56,10 +62,12 @@ namespace project_H
         }
         public static void multi()
         {
+            #region console
             check_draw.Setuser(true);
             Console.Clear();
             Console.Write("MultiPlay MODE\n\n");
             Console.Write("word? : ");
+            #endregion
             string text = Console.ReadLine();
             if(text.Length <= 0)
             {
@@ -77,26 +85,25 @@ namespace project_H
         }
 
 
-        public static void complete(int diff, string answer, bool multi)
+        public static void complete(int difficulty, string answer, bool multiplay)
         {
-            Console.Clear();
-            
+            #region console
+            Console.Clear();       
             string asciiArt = FiggleFonts.Standard.Render("COMPLETE");
             Console.Write(asciiArt);
             Console.SetCursorPosition(1, 7);
             Console.WriteLine(answer);
-            Thread.Sleep(1000);
-            if(multi == false)
+            Thread.Sleep(2000);
+            #endregion
+            if (multiplay == false)
             {
-                //초기화 그룹-------------------------------------
+                #region 초기화 그룹
                 StringGroup init = new StringGroup();
                 check_draw.SetWord(init.text());
                 check_draw.SetWord_category(init.text_category());
-                //------------------------------------------------
-
+                #endregion
                 Console.Clear();
-
-                OnGame(diff);
+                OnGame(difficulty);
             }
         }
 
@@ -104,6 +111,7 @@ namespace project_H
         {
             while (true)
             {
+                #region console
                 Console.Clear();
                 string die = FiggleFonts.Standard.Render("DEAD . . .");
                 Console.Write(die);
@@ -113,17 +121,16 @@ namespace project_H
                 Thread.Sleep(500);
                 Console.WriteLine("\nREPLAY?\n");
                 Console.WriteLine("CONTINUE PRESS : R");
-
-
+                #endregion
                 ConsoleKeyInfo repl = Console.ReadKey();
                 if (repl.Key == ConsoleKey.R)
                 {
                     Console.Clear();
-                    //초기화 그룹-------------------------------------
+                    #region 초기화 그룹
                     StringGroup init = new StringGroup();
                     check_draw.SetWord(init.text());
                     check_draw.SetWord_category(init.text_category());
-                    //------------------------------------------------
+                    #endregion
                     selete_mode();
                     break;
                 }
